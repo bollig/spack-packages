@@ -71,6 +71,9 @@ class RRgdal(RPackage):
         deprecated=True,
     )
 
+    depends_on("c", type="build")  # generated
+    depends_on("cxx", type="build")  # generated
+
     depends_on("r@3.3.0:", type=("build", "run"))
     depends_on("r@3.5.0:", type=("build", "run"), when="@1.5:")
     depends_on("r-sp@1.1-0:", type=("build", "run"))

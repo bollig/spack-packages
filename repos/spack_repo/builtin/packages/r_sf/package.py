@@ -33,6 +33,8 @@ class RSf(RPackage):
         # deprecated @:0.7-3 as gdal@:2 is deprecated, and gdal@3: requires proj@6:
         version("0.5-5", sha256="82ad31f98243b6982302fe245ee6e0d8d0546e5ff213ccc00ec3025dfec62229")
 
+    depends_on("cxx", type="build")  # generated
+
     depends_on("r@3.3.0:", type=("build", "run"))
     depends_on("r-classint@0.2-1:", type=("build", "run"))
     depends_on("r-classint@0.4-1:", type=("build", "run"), when="@0.9-7:")
