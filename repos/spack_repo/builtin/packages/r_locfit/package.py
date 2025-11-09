@@ -29,4 +29,5 @@ class RLocfit(RPackage):
     depends_on("r@4.1.0:", type=("build", "run"), when="@1.5-9.5:")
     depends_on("r-lattice", type=("build", "run"))
 
+    depends_on("c", type=("build"))
     depends_on("fortran", type=("build"))

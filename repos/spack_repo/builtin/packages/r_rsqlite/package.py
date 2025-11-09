@@ -43,5 +43,6 @@ class RRsqlite(RPackage):
     depends_on("r-rcpp@0.12.7:", type=("build", "run"), when="@:2.2.18")
     depends_on("r-rcpp@1.0.7:", type=("build", "run"), when="@2.2.9:2.2.18")
 
+    depends_on("c", type=("build"))
     depends_on("cxx", type=("build"))
     depends_on("fortran", type=("build"))

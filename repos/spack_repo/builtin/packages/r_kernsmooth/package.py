@@ -22,4 +22,5 @@ class RKernsmooth(RPackage):
 
     depends_on("r@2.5.0:", type=("build", "run"))
 
+    depends_on("c", type=("build"))
     depends_on("fortran", type=("build"))

@@ -32,5 +32,6 @@ class RPryr(RPackage):
     depends_on("r-rcpp@0.11.0:", type=("build", "run"))
     depends_on("r-lobstr", type=("build", "run"), when="@0.1.5:")
 
+    depends_on("c", type=("build"))
     depends_on("cxx", type=("build"))
     depends_on("fortran", type=("build"))

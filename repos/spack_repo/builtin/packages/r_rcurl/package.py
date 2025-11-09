@@ -37,4 +37,5 @@ class RRcurl(RPackage):
     depends_on("curl")
     depends_on("gmake", type="build")
 
+    depends_on("c", type=("build"))
     depends_on("fortran", type=("build"))
