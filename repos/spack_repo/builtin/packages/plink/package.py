@@ -43,6 +43,7 @@ class Plink(Package):
         depends_on("lapack", when="@1.9-beta6.27:")
     depends_on("gmake", type="build")
     depends_on("c", type="build")
+    depends_on("cxx", type="build")
 
     patch("dynamic_zlib.patch", when="@1.9-beta6.27:1.9-beta6.99")
     patch("dynamic_zlib-1.3.patch", when="@1.9-beta7.7:")
