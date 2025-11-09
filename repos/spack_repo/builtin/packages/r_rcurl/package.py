@@ -36,3 +36,5 @@ class RRcurl(RPackage):
     depends_on("r-bitops", type=("build", "run"))
     depends_on("curl")
     depends_on("gmake", type="build")
+
+    depends_on("fortran", type=("build"))

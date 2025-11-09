@@ -25,3 +25,5 @@ class RNnet(RPackage):
 
     depends_on("r@2.14:", type=("build", "run"))
     depends_on("r@3.0.0:", type=("build", "run"), when="@7.3-14:")
+
+    depends_on("fortran", type=("build"))

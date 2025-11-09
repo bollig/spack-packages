@@ -35,3 +35,5 @@ class RMarkdown(RPackage):
     depends_on("r-xfun", type=("build", "run"), when="@1.1:")
     depends_on("r-xfun@0.38:", type=("build", "run"), when="@1.6:")
     depends_on("r-mime@0.3:", type=("build", "run"), when="@:1.3")
+
+    depends_on("fortran", type=("build"))

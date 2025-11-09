@@ -30,3 +30,6 @@ class RPlyr(RPackage):
 
     depends_on("r@3.1.0:", type=("build", "run"))
     depends_on("r-rcpp@0.11.0:", type=("build", "run"))
+
+    depends_on("cxx", type=("build"))
+    depends_on("fortran", type=("build"))

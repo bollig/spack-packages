@@ -25,3 +25,5 @@ class RSparsem(RPackage):
     version("1.7", sha256="df61550b267f8ee9b9d3b17acbadd57a428b43e5e13a6b1c56ed4c38cb523369")
 
     depends_on("r@2.15:", type=("build", "run"))
+
+    depends_on("fortran", type=("build"))

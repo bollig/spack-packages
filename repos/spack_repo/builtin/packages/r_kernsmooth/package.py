@@ -21,3 +21,5 @@ class RKernsmooth(RPackage):
     version("2.23-15", sha256="8b72d23ed121a54af188b2cda4441e3ce2646359309885f6455b82c0275210f6")
 
     depends_on("r@2.5.0:", type=("build", "run"))
+
+    depends_on("fortran", type=("build"))

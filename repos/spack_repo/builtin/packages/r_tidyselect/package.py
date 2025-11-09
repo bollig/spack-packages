@@ -48,3 +48,5 @@ class RTidyselect(RPackage):
 
     depends_on("r-purrr", type=("build", "run"), when="@:1.1.2")
     depends_on("r-purrr@0.3.2:", type=("build", "run"), when="@1.1.0:1.1.2")
+
+    depends_on("fortran", type=("build"))
