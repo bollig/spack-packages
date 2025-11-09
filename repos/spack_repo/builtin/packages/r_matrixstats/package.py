@@ -29,3 +29,7 @@ class RMatrixstats(RPackage):
     version("0.52.2", sha256="39da6aa6b109f89a141dab8913d981abc4fbd3f8be9e206f92e382cc5270d2a5")
 
     depends_on("r@2.12.0:", type=("build", "run"))
+    depends_on("r@3.4.0:", type=("build", "run"), when="@1.5.0:")
+
+    depends_on("c", type=("build"))
+    depends_on("fortran", type=("build"))

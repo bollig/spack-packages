@@ -21,3 +21,6 @@ class RFilelock(RPackage):
     version("1.0.2", sha256="ac2915950789b16c43a625a2b8dab6ba423588db4a7d0daa75b74518b82b1403")
 
     depends_on("r@3.4:", type=("build", "run"), when="@1.0.3:")
+
+    depends_on("c", type=("build"))
+    depends_on("fortran", type=("build"))

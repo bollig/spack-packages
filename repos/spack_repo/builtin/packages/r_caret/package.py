@@ -28,6 +28,7 @@ class RCaret(RPackage):
     version("6.0-70", sha256="21c5bdf7cf07bece38729465366564d8ca104c2466ee9fd800ca1fd88eb82f38")
 
     depends_on("c", type="build")  # generated
+    depends_on("fortran", type="build")  
 
     depends_on("r@2.10:", type=("build", "run"))
     depends_on("r@3.2.0:", type=("build", "run"), when="@6.0-82:")

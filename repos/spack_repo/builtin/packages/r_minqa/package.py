@@ -23,3 +23,6 @@ class RMinqa(RPackage):
 
     depends_on("r-rcpp@0.9.10:", type=("build", "run"))
     depends_on("gmake", type="build")
+
+    depends_on("cxx", type=("build"))
+    depends_on("fortran", type=("build"))
