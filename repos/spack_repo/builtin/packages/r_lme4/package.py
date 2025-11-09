@@ -48,3 +48,6 @@ class RLme4(RPackage):
     depends_on("r-rcppeigen@0.3.3.9.4:", type=("build", "run"), when="@1.1-35.1:")
 
     depends_on("r-statmod", type=("build", "run"), when="@1.1-26")
+
+    depends_on("c", type=("build"))
+    depends_on("cxx", type=("build"))
