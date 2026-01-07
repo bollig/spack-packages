@@ -1,0 +1,3 @@
+repo:
+  namespace: custom_repo
+  api: v2.2
